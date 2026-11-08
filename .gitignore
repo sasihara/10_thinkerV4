@@ -15,7 +15,6 @@ doc/
 
 # Build history
 build/history/
-build/
 build_system/
 
 # Local log file
