@@ -9,13 +9,14 @@
 *.user
 *.userosscache
 *.sln.docstates
+10_thinkerV4.code-workspace
 
 # Documentation files
 doc/
 
 # Build history
 build/history/
-#build_system/
+build_system/
 
 # Local log file
 thinkerV3_log.txt
