@@ -1,9 +1,0 @@
-{
-	"folders": [
-		{
-			"uri": "vscode-remote://ssh-remote+7b22686f73744e616d65223a22646778737061726b5f32323232227d/home/sasihara/Documents/10_thinkerV4"
-		}
-	],
-	"remoteAuthority": "ssh-remote+7b22686f73744e616d65223a22646778737061726b5f32323232227d",
-	"settings": {}
-}
