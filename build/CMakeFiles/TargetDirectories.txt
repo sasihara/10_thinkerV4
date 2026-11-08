@@ -1,0 +1,3 @@
+/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/thinkerV4pt_arm.dir
+/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/edit_cache.dir
+/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/rebuild_cache.dir

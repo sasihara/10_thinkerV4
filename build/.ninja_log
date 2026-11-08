@@ -1,0 +1,15 @@
+# ninja log v7
+23	71	1793619149208518411	CMakeFiles/thinkerV4pt_arm.dir/01_othello/common/logging.cpp.o	1760335d0cc2ffc6
+22	264	1793623435658336351	CMakeFiles/thinkerV4pt_arm.dir/01_othello/common/messageGenerator.cpp.o	ad0be38227599e16
+24	261	1793619149209051256	CMakeFiles/thinkerV4pt_arm.dir/01_othello/common/messageParser.cpp.o	c7da111a3ac26fd8
+128	10331	1793679711227231785	CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/State.cpp.o	d5fde1d35947dd0a
+21	9263	1793626607515036941	CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/history.cpp.o	3bc8ec4b810252ec
+128	11334	1793679711227466809	CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/think.cpp.o	8be686f56b6112bc
+128	11896	1793679711226241289	CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/PTHHandler.cpp.o	f19f89658c910e2
+22	9561	1793626607517354910	CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/Pv_mcts_action.cpp.o	353e6c300890dc09
+20	10155	1793626607514036940	CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/main.cpp.o	67fc5b2cd205b8d9
+19	8699	1793629218664043878	CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/Node.cpp.o	e108bf6c9c6965d
+129	10474	1793679711227829641	CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/thinkV1.cpp.o	168526b0f1e11d1d
+11896	12312	1793679722994998071	thinkerV4pt_arm	e63e8c99ccbe184a
+2	8	1792213188727328258	clean	9596c3c3a7b77f5
+3	1046	1794106110714450355	build.ninja	8b7f63b3071d42ec

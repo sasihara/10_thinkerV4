@@ -1,0 +1,68 @@
+[
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/main.cpp.o -c /home/sasihara/Documents/10_thinkerV4/10_thinkerV4/main.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/10_thinkerV4/main.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/main.cpp.o"
+},
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/history.cpp.o -c /home/sasihara/Documents/10_thinkerV4/10_thinkerV4/history.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/10_thinkerV4/history.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/history.cpp.o"
+},
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/Node.cpp.o -c /home/sasihara/Documents/10_thinkerV4/10_thinkerV4/Node.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/10_thinkerV4/Node.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/Node.cpp.o"
+},
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/PTHHandler.cpp.o -c /home/sasihara/Documents/10_thinkerV4/10_thinkerV4/PTHHandler.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/10_thinkerV4/PTHHandler.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/PTHHandler.cpp.o"
+},
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/Pv_mcts_action.cpp.o -c /home/sasihara/Documents/10_thinkerV4/10_thinkerV4/Pv_mcts_action.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/10_thinkerV4/Pv_mcts_action.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/Pv_mcts_action.cpp.o"
+},
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/State.cpp.o -c /home/sasihara/Documents/10_thinkerV4/10_thinkerV4/State.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/10_thinkerV4/State.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/State.cpp.o"
+},
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/think.cpp.o -c /home/sasihara/Documents/10_thinkerV4/10_thinkerV4/think.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/10_thinkerV4/think.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/think.cpp.o"
+},
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/thinkV1.cpp.o -c /home/sasihara/Documents/10_thinkerV4/10_thinkerV4/thinkV1.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/10_thinkerV4/thinkV1.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/10_thinkerV4/thinkV1.cpp.o"
+},
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/01_othello/common/logging.cpp.o -c /home/sasihara/Documents/10_thinkerV4/01_othello/common/logging.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/01_othello/common/logging.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/01_othello/common/logging.cpp.o"
+},
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/01_othello/common/messageGenerator.cpp.o -c /home/sasihara/Documents/10_thinkerV4/01_othello/common/messageGenerator.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/01_othello/common/messageGenerator.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/01_othello/common/messageGenerator.cpp.o"
+},
+{
+  "directory": "/home/sasihara/Documents/10_thinkerV4/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++ -DLOGLEVEL=LOGLEVEL_INFO -DUSE_C10D_GLOO -DUSE_C10D_MPI -DUSE_C10D_NCCL -DUSE_C10D_UCC -DUSE_DISTRIBUTED -DUSE_NVSHMEM -DUSE_RPC -DUSE_TENSORPIPE -I/home/sasihara/Documents/10_thinkerV4/01_othello/othello -I/home/sasihara/Documents/10_thinkerV4/01_othello/common -isystem /usr/local/lib/python3.12/dist-packages/torch/include -isystem /usr/local/lib/python3.12/dist-packages/torch/include/torch/csrc/api/include -isystem /usr/local/cuda/include   -O3 -march=native -g -std=gnu++20 -fopenmp -o CMakeFiles/thinkerV4pt_arm.dir/01_othello/common/messageParser.cpp.o -c /home/sasihara/Documents/10_thinkerV4/01_othello/common/messageParser.cpp",
+  "file": "/home/sasihara/Documents/10_thinkerV4/01_othello/common/messageParser.cpp",
+  "output": "CMakeFiles/thinkerV4pt_arm.dir/01_othello/common/messageParser.cpp.o"
+}
+]

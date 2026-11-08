@@ -1,0 +1,13 @@
+[  8%] Building CXX object CMakeFiles/thinkerV3pt.dir/06_thinkerV3_PyTorch/main.cpp.o
+[ 16%] Building CXX object CMakeFiles/thinkerV3pt.dir/06_thinkerV3_PyTorch/history.cpp.o
+[ 25%] Building CXX object CMakeFiles/thinkerV3pt.dir/06_thinkerV3_PyTorch/Node.cpp.o
+[ 33%] Building CXX object CMakeFiles/thinkerV3pt.dir/06_thinkerV3_PyTorch/PTHHandler.cpp.o
+[ 41%] Building CXX object CMakeFiles/thinkerV3pt.dir/06_thinkerV3_PyTorch/Pv_mcts_action.cpp.o
+[ 50%] Building CXX object CMakeFiles/thinkerV3pt.dir/06_thinkerV3_PyTorch/State.cpp.o
+[ 58%] Building CXX object CMakeFiles/thinkerV3pt.dir/06_thinkerV3_PyTorch/think.cpp.o
+[ 66%] Building CXX object CMakeFiles/thinkerV3pt.dir/06_thinkerV3_PyTorch/thinkV1.cpp.o
+[ 75%] Building CXX object CMakeFiles/thinkerV3pt.dir/01_othello/common/logging.cpp.o
+[ 83%] Building CXX object CMakeFiles/thinkerV3pt.dir/01_othello/common/messageGenerator.cpp.o
+[ 91%] Building CXX object CMakeFiles/thinkerV3pt.dir/01_othello/common/messageParser.cpp.o
+[100%] Linking CXX executable thinkerV3pt
+[100%] Built target thinkerV3pt
