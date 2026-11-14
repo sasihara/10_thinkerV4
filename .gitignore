@@ -369,3 +369,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Local VS Code workspace configuration
+10_thinkerV4.code-workspace
