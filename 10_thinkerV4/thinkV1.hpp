@@ -9,9 +9,9 @@
 
 // Parameters for thinker
 #define SEARCH_DEPTH_MP				7
-#define NUM_FOR_GAMESTATE_END_MP	17
+#define NUM_FOR_GAMESTATE_END_MP	22
 #define SEARCH_DEPTH				6
-#define NUM_FOR_GAMESTATE_END		16
+#define NUM_FOR_GAMESTATE_END		19
 //#define SEARCH_DEPTH				7
 //#define NUM_FOR_GAMESTATE_END		14
 #define NUM_FOR_GAMESTATE_MIDFIELD	48
@@ -115,6 +115,8 @@ private:
 	int CountDisk(DISKCOLORS color, DISKCOLORS _board[64]);
 	int findBestPlaceForCurrentPlayer(int lv);
 	int findBestPlaceForCurrentPlayerMP(int lv);
+	int NegaAlpha(int empties, bool passed, int alpha, int beta, uint64_t my, uint64_t opp);
+	int NegaAlphaParallelNode(int empties, bool passed, int alpha, int beta, uint64_t my, uint64_t opp);
 	int MaxLevel(int lv, bool f, int alpha, int beta, uint64_t my, uint64_t opp);
 	int MinLevel(int lv, bool f, int alpha, int beta, uint64_t my, uint64_t opp);
 	int evcal(uint64_t my, uint64_t opp);

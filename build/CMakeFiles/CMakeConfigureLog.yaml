@@ -9031,3 +9031,203 @@ events:
         
       exitCode: 1
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/cuda.cmake:108 (try_run)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp"
+      binary: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2;/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/local/bin/ninja -v cmTC_ffc1b
+        [1/2] /usr/bin/aarch64-linux-gnu-g++  -I/usr/local/cuda/include -std=gnu++20 -o CMakeFiles/cmTC_ffc1b.dir/detect_cuda_version.cc.o -c /home/sasihara/Documents/10_thinkerV4/build/detect_cuda_version.cc
+        [2/2] : && /usr/bin/aarch64-linux-gnu-g++   CMakeFiles/cmTC_ffc1b.dir/detect_cuda_version.cc.o -o cmTC_ffc1b  -Wl,-rpath,/usr/local/cuda/lib64  /usr/local/cuda/lib64/libcudart.so && :
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        13.2
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:128 (try_run)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:188 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/utils.cmake:331 (cuda_select_nvcc_arch_flags)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/cuda.cmake:329 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp"
+      binary: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2;/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/local/bin/ninja -v cmTC_ee690
+        [1/2] /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler   -std=c++20 -MD -MT CMakeFiles/cmTC_ee690.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_ee690.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/sasihara/Documents/10_thinkerV4/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_ee690.dir/detect_cuda_compute_capabilities.cu.o
+        [2/2] : && /usr/bin/g++  CMakeFiles/cmTC_ee690.dir/detect_cuda_compute_capabilities.cu.o -o cmTC_ee690  -lcudadevrt  -lcudart_static  -lrt  -lpthread  -ldl -L"/usr/local/cuda/targets/sbsa-linux/lib/stubs" -L"/usr/local/cuda/targets/sbsa-linux/lib" && :
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.1 
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.12/dist-packages/cmake/data/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/usr/local/lib/python3.12/dist-packages/cmake/data/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:13 (find_package)"
+    description: "Detecting CUDA OpenMP compiler info"
+    directories:
+      source: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeScratch/TryCompile-upWzR2"
+      binary: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeScratch/TryCompile-upWzR2"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: " -DONNX_NAMESPACE=onnx_c2 -gencode arch=compute_20,code=sm_121 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --expt-relaxed-constexpr --expt-extended-lambda"
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CUDA_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeScratch/TryCompile-upWzR2'
+        
+        Run Build Command(s): /usr/local/bin/ninja -v cmTC_d448c
+        [1/2] /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler   -DONNX_NAMESPACE=onnx_c2 -gencode arch=compute_20,code=sm_121 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --expt-relaxed-constexpr --expt-extended-lambda -fopenmp -std=c++20 -MD -MT CMakeFiles/cmTC_d448c.dir/OpenMPTryFlag.cu.o -MF CMakeFiles/cmTC_d448c.dir/OpenMPTryFlag.cu.o.d -x cu -c /home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeScratch/TryCompile-upWzR2/OpenMPTryFlag.cu -o CMakeFiles/cmTC_d448c.dir/OpenMPTryFlag.cu.o
+        FAILED: [code=1] CMakeFiles/cmTC_d448c.dir/OpenMPTryFlag.cu.o 
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler   -DONNX_NAMESPACE=onnx_c2 -gencode arch=compute_20,code=sm_121 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --expt-relaxed-constexpr --expt-extended-lambda -fopenmp -std=c++20 -MD -MT CMakeFiles/cmTC_d448c.dir/OpenMPTryFlag.cu.o -MF CMakeFiles/cmTC_d448c.dir/OpenMPTryFlag.cu.o.d -x cu -c /home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeScratch/TryCompile-upWzR2/OpenMPTryFlag.cu -o CMakeFiles/cmTC_d448c.dir/OpenMPTryFlag.cu.o
+        nvcc fatal   : Unsupported gpu architecture 'compute_20'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/cuda.cmake:108 (try_run)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp"
+      binary: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2;/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/local/bin/ninja -v cmTC_01932
+        [1/2] /usr/bin/aarch64-linux-gnu-g++  -I/usr/local/cuda/include -std=gnu++20 -o CMakeFiles/cmTC_01932.dir/detect_cuda_version.cc.o -c /home/sasihara/Documents/10_thinkerV4/build/detect_cuda_version.cc
+        [2/2] : && /usr/bin/aarch64-linux-gnu-g++   CMakeFiles/cmTC_01932.dir/detect_cuda_version.cc.o -o cmTC_01932  -Wl,-rpath,/usr/local/cuda/lib64  /usr/local/cuda/lib64/libcudart.so && :
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        13.2
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:128 (try_run)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:188 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/utils.cmake:331 (cuda_select_nvcc_arch_flags)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/cuda.cmake:329 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "CMakeLists.txt:12 (find_package)"
+    directories:
+      source: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp"
+      binary: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2;/usr/local/lib/python3.12/dist-packages/torch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/local/bin/ninja -v cmTC_652e7
+        [1/2] /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler   -std=c++20 -MD -MT CMakeFiles/cmTC_652e7.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_652e7.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/sasihara/Documents/10_thinkerV4/build/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_652e7.dir/detect_cuda_compute_capabilities.cu.o
+        [2/2] : && /usr/bin/g++  CMakeFiles/cmTC_652e7.dir/detect_cuda_compute_capabilities.cu.o -o cmTC_652e7  -lcudadevrt  -lcudart_static  -lrt  -lpthread  -ldl -L"/usr/local/cuda/targets/sbsa-linux/lib/stubs" -L"/usr/local/cuda/targets/sbsa-linux/lib" && :
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.1 
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/lib/python3.12/dist-packages/cmake/data/share/cmake-3.31/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/usr/local/lib/python3.12/dist-packages/cmake/data/share/cmake-3.31/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:13 (find_package)"
+    description: "Detecting CUDA OpenMP compiler info"
+    directories:
+      source: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeScratch/TryCompile-P6ZKH2"
+      binary: "/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeScratch/TryCompile-P6ZKH2"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: " -DONNX_NAMESPACE=onnx_c2 -gencode arch=compute_20,code=sm_121 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --expt-relaxed-constexpr --expt-extended-lambda"
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CUDA_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeScratch/TryCompile-P6ZKH2'
+        
+        Run Build Command(s): /usr/local/bin/ninja -v cmTC_99743
+        [1/2] /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler   -DONNX_NAMESPACE=onnx_c2 -gencode arch=compute_20,code=sm_121 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --expt-relaxed-constexpr --expt-extended-lambda -fopenmp -std=c++20 -MD -MT CMakeFiles/cmTC_99743.dir/OpenMPTryFlag.cu.o -MF CMakeFiles/cmTC_99743.dir/OpenMPTryFlag.cu.o.d -x cu -c /home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeScratch/TryCompile-P6ZKH2/OpenMPTryFlag.cu -o CMakeFiles/cmTC_99743.dir/OpenMPTryFlag.cu.o
+        FAILED: [code=1] CMakeFiles/cmTC_99743.dir/OpenMPTryFlag.cu.o 
+        /usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler   -DONNX_NAMESPACE=onnx_c2 -gencode arch=compute_20,code=sm_121 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --expt-relaxed-constexpr --expt-extended-lambda -fopenmp -std=c++20 -MD -MT CMakeFiles/cmTC_99743.dir/OpenMPTryFlag.cu.o -MF CMakeFiles/cmTC_99743.dir/OpenMPTryFlag.cu.o.d -x cu -c /home/sasihara/Documents/10_thinkerV4/build/CMakeFiles/CMakeScratch/TryCompile-P6ZKH2/OpenMPTryFlag.cu -o CMakeFiles/cmTC_99743.dir/OpenMPTryFlag.cu.o
+        nvcc fatal   : Unsupported gpu architecture 'compute_20'
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
