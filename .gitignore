@@ -68,6 +68,9 @@ artifacts/
 # Runtime-generated game history
 /10_thinkerV4/history/
 
+# Documentation output
+/doc/
+
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
