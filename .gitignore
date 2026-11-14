@@ -21,6 +21,8 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+/build/
+/out/
 x64/
 x86/
 [Ww][Ii][Nn]32/
@@ -62,6 +64,12 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
+
+# Runtime-generated game history
+/10_thinkerV4/history/
+
+# Documentation output
+/doc/
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
@@ -361,3 +369,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Local VS Code workspace configuration
+10_thinkerV4.code-workspace
