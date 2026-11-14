@@ -3,7 +3,8 @@
 #include "State.hpp"
 #include "PTHHandler.hpp"
 
-#define	C_PUCT	1.0
+#define	C_PUCT			1.0
+#define	FPU_REDUCTION	0.2
 
 class Node;
 

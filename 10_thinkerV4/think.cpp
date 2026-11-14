@@ -107,9 +107,10 @@ int Thinker::think(int turn, DISKCOLORS *board, int *place, GameId gameId)
 	numSpaceLeft = CountDisk(DISKCOLORS::COLOR_NONE, board);
 	LOGOUT(LOGLEVEL_TRACE, "残り石数 = %d.", numSpaceLeft);
 
-	// Temperature値の修正
+	// Temperature値の決定（メンバ変数 spTemperature は上書きせずローカル変数を使用）
+	double currentTemperature = spTemperature;
 	if (limitTemperaturePeriod == true && numSpaceLeft <= 50) {
-		spTemperature = 0.0;
+		currentTemperature = 0.0;
 	}
 
 	int endThreshold = (thinkArc == THINKARC::THINKARC_MINMAX_MP) ? NUM_FOR_GAMESTATE_END_MP : NUM_FOR_GAMESTATE_END;
@@ -168,7 +169,7 @@ int Thinker::think(int turn, DISKCOLORS *board, int *place, GameId gameId)
 		Pv_mcts_action* next_action;
 
 		try {
-			next_action = new Pv_mcts_action(&model, spTemperature, numIterations, isBreadthFirst);
+			next_action = new Pv_mcts_action(&model, currentTemperature, numIterations, isBreadthFirst);
 		}
 		catch (...) {
 			return -5;

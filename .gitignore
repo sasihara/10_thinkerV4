@@ -9,19 +9,6 @@
 *.user
 *.userosscache
 *.sln.docstates
-10_thinkerV4.code-workspace
-
-# Documentation files
-doc/
-
-# Build history
-build/history/
-build_system/
-
-# Local log file
-thinkerV3_log.txt
-build_output.txt
-verify_build.txt
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -34,6 +21,8 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+/build/
+/out/
 x64/
 x86/
 [Ww][Ii][Nn]32/
@@ -75,6 +64,9 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
+
+# Runtime-generated game history
+/10_thinkerV4/history/
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt

@@ -265,11 +265,21 @@ int Node::evaluate(float *result)
 
 	if (num_legal > 0) {
 		child_node_list.reserve(num_legal);
+
+		// 合法手のPolicy合計値を計算（正規化用）
+		double sum_legal_p = 0.0;
+		for (int i = 0; i < num_legal; i++) {
+			sum_legal_p += (double)policies[legal_moves[i].x * 8 + legal_moves[i].y];
+		}
+
 		// 列挙済みの合法手を使って子ノードを生成（再度の state.check は不要）
 		for (int i = 0; i < num_legal; i++) {
 			int x = legal_moves[i].x;
 			int y = legal_moves[i].y;
 			int flag = legal_moves[i].flag;
+			double norm_p = (sum_legal_p > 1e-8)
+				? ((double)policies[x * 8 + y] / sum_legal_p)
+				: (1.0 / (double)num_legal);
 
 			State next;
 			ret = next.init(state.board, state.opponent);
@@ -280,7 +290,7 @@ int Node::evaluate(float *result)
 
 			Node* childNode;
 			try {
-				childNode = new Node(model, &next, policies[x * 8 + y], isBreadthFirst);
+				childNode = new Node(model, &next, norm_p, isBreadthFirst);
 			}
 			catch (...) {
 				return -7;
@@ -301,7 +311,7 @@ int Node::evaluate(float *result)
 
 		Node* childNode;
 		try {
-			childNode = new Node(model, &next, policies[64], isBreadthFirst);
+			childNode = new Node(model, &next, 1.0, isBreadthFirst);
 		}
 		catch (...) {
 			return -7;
@@ -345,11 +355,16 @@ int Node::get_next_child_node(Child** next_child_node)
 	t = this->n - 1;
 	const double c_sqrt_t = C_PUCT * sqrt((double)t);
 
+	// 未訪問ノードの初期Q値（FPU Reduction）を計算
+	// ※ this->w はすでに親（現在手番）視点の価値であるため符号はプラスのまま使用する
+	const double parent_q = (this->n > 0) ? (this->w / (double)this->n) : 0.0;
+	const double fpu_value = parent_q - FPU_REDUCTION;
+
 	for (size_t i = 0; i < num_children; i++) {
 		const Node* child_node = child_node_list[i].node;
 		// ★原書の6.3節の本文の説明を読むと、w値に-1.0を掛けるような説明は無い。
 		// ★なぜ原書のPythonコードの方は-1を掛けるのか？？
-		double pucb_value_1st = child_node->n > 0 ? -child_node->w / child_node->n : 0.0;
+		double pucb_value_1st = child_node->n > 0 ? -child_node->w / child_node->n : fpu_value;
 		double pucb_value_2nd = c_sqrt_t * child_node->p / (double)(1 + child_node->n);
 		double pucb_value = pucb_value_1st + pucb_value_2nd;
 
